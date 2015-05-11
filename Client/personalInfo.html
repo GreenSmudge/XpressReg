@@ -1,0 +1,34 @@
+﻿<div ng-controller="PersonalInfoController">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Personal Info:</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form role="form" style="max-width: 300px;padding-left:20px">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="barcode">Barcode:</label>
+                        <input type="text" class="form-control" name="barcode" placeholder="Barcode" value="{{barcode}}" ng-model="barcode" ng-change="update()" />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">First Name:</label>
+                        <input type="text" class="form-control" placeholder="First name" value="{{firstname}}" ng-model="firstName" ng-change="update()" />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Last Name:</label>
+                        <input type="text" class="form-control" placeholder="Last name" value="{{lastname}}" ng-model="lastName" ng-change="update()" />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Birthday:</label>
+                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" value="{{birthday}}" ng-model="birthday" ng-change="update()" />
+                    </div>
+
+                </div>
+                <a href="#/codes" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>  <a href="#/contactinfo" class="btn btn-primary" ng-click="savePersonalInfo()">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </form>
+        </div>
+    </div>
+</div>

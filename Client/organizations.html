@@ -1,0 +1,26 @@
+﻿<div ng-controller="OrgController">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Select a branch:</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form role="form" style="max-width: 300px;padding-left:20px">
+
+                <div class="form-group">
+                    <div>
+                        <!--<select data-ng-model="organizationID" data-ng-options="org.Name for org in organizations">Select a branch</select>-->
+                        <select ng-options="org as org.Name for org in organizations"
+                                ng-model="selectedorg" ng-change="update()"></select>
+                    </div>
+                </div>
+                <p><a href="#/" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a>  <a href="#/codes" ng-click="saveOrganization()" class="btn btn-primary">Next <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+            </form>
+
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,13 @@
+﻿.band {
+    color: white;
+    background-color: #0e5667;
+}
+
+/*Bootstrap customizations*/
+.btn-primary {
+    background-color: #4a8d9d;
+}
+
+.btn-primary:hover {
+    background-color: #427d8c
+}

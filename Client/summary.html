@@ -1,0 +1,29 @@
+﻿<div ng-controller="SummaryController">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Patron Summary:</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <form role="form" style="max-width: 300px;padding-left:20px">
+
+                <div class="form-group">
+                    <b>Firstname</b>:    {{firstName}}<br />
+                    <b>Lastname</b>:     {{lastName}}<br />
+                    <b>Barcode</b>:      {{barcode}}<br />
+                    <b>Birthday</b>:     {{birthday}}<br />
+                    <b>Email</b>:        {{email}}<br />
+                    <b>Phone</b>:        {{phone}}<br />
+                    <b>Branch</b>:       {{organizationID}}<br />
+                    <b>Patroncode</b>:   {{patroncodeID}}
+
+                </div>
+                <a href="#/contactinfo" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a> <button type="button" class="btn btn-success" ng-click="savePatron()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

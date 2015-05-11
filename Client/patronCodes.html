@@ -1,0 +1,23 @@
+﻿<div ng-controller="PatronCodesController">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Select a patron code:</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form role="form" style="max-width: 300px;padding-left:20px">
+                <div class="form-group">
+
+                    <div>
+                        <select ng-options="code as code.Description for code in patronCodes"
+                                ng-model="selectedPatronCode" ng-change="update()"></select>
+
+                    </div>
+                </div>
+                <a href="#/orgs" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a> <a href="#/personalinfo" ng-click="savePatroncode()" class="btn btn-primary">Next <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </form>
+        </div>
+    </div>
+</div>
